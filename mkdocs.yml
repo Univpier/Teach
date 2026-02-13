@@ -1,6 +1,6 @@
 ﻿site_name: Teach Docs
 site_description: Documentation powered by MkDocs Material
-site_url: https://example.github.io/teach/
+site_url: https://univpier.github.io/teach/
 
 theme:
   name: material
