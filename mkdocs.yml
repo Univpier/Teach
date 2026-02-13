@@ -1,15 +1,40 @@
 ﻿site_name: Teach Docs
-site_description: Documentation powered by MkDocs Material
+site_description: Учебная документация на MkDocs Material
 site_url: https://univpier.github.io/teach/
+
+repo_name: Univpier/teach
+repo_url: https://github.com/Univpier/teach
 
 theme:
   name: material
+  language: ru
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
 
 nav:
-  - Home: index.md
-  - Lesson 1: lesson-1.md
+  - Главная: index.md
+  - Уроки:
+      - Урок 1. Введение: lesson-1.md
+      - Урок 2. Структура проекта: lesson-2.md
+      - Урок 3. Публикация на GitHub Pages: lesson-3.md
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
   - toc:
       permalink: true
+
+extra_css:
+  - assets/stylesheets/extra.css

@@ -1,13 +1,17 @@
-﻿# Lesson 1: Introduction
+﻿# Урок 1. Введение
 
-This is an example lesson page.
+## Цель
 
-## Learning Goals
+Понять базовую структуру проекта и запустить документацию локально.
 
-- Understand the structure of this docs project
-- Learn how to add new pages
-- Preview changes locally with MkDocs
+## Что важно знать
 
-## Example Activity
+- Все страницы лежат в папке `docs/`
+- Главная конфигурация находится в `mkdocs.yml`
+- Навигация сайта управляется через `nav`
 
-Create a new file in `docs/`, then add it to the `nav` section in `mkdocs.yml`.
+## Практика
+
+1. Создайте новый Markdown-файл в `docs/`
+2. Добавьте страницу в `nav` внутри `mkdocs.yml`
+3. Проверьте изменения командой `python -m mkdocs serve`
